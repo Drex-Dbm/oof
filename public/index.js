@@ -3,7 +3,7 @@
 // Login & Fetch Data
 var socket = io();
 var bearer = getCookie("bearer");
-if (!bearer) updateLoadingHTML('<a href="https://discordapp.com/api/oauth2/authorize?client_id=621363163476262912&redirect_uri=https%3A%2F%2Flustful-queue.glitch.me%2F&response_type=code&scope=identify"><button type="button" class="btn btn-dark">Login With Discord</button></a>')
+if (!bearer) updateLoadingHTML('<a href="https://discordapp.com/api/oauth2/authorize?client_id=621363163476262912&redirect_uri=https%3A%2F%2Flustful-queue.glitch.me%2Fcallback&response_type=code&scope=identify"><button type="button" class="btn btn-dark">Login With Discord</button></a>')
 else socket.emit('getInfo', bearer);
 
 function updateLoadingHTML(html) {
