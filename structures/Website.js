@@ -27,7 +27,7 @@ class Website {
 
     let ops = {
       clientId: '621363163476262912', // This is what the input shoud look like, replace it with your own.
-      clientSecret: 'jomevSoERkpncmX0zoMDeg2AODnlsbAY', // This is what the input shoud look like, replace it with your own.
+      clientSecret: 'SbCdz2FXnLlyrbaTrAb9IihTvnLxhmkm', // This is what the input shoud look like, replace it with your own.
       accessTokenUri: 'https://discordapp.com/api/oauth2/token',
       authorizationUri: 'https://discordapp.com/api/oauth2/authorize',
       redirectUri: 'https://lustful-queue.glitch.me/callback', // This is what the input shoud look like, replace it with your own.

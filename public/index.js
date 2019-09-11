@@ -32,7 +32,7 @@ socket.on('getNewInfo', function() {
 socket.on('getInfo', function(info) {
 
   // Verify Login & Access
-  if (!info) updateLoadingHTML('<a href="https://discordapp.com/api/oauth2/authorize?client_id=621363163476262912&redirect_uri=https%3A%2F%2Flustful-queue.glitch.me%2Fcallback&response_type=code&scope=identify"><button type="button" class="btn btn-dark">Login With Discord</button></a>')
+  if (!info) updateLoadingHTML('<a href="https://discordapp.com/api/oauth2/authorize?client_id=621363163476262912&redirect_uri=https%3A%2F%2Flustful-queue.glitch.me%2F&response_type=code&scope=identify"><button type="button" class="btn btn-dark">Login With Discord</button></a>')
   else if (info === 403) updateLoadingHTML('Sorry, you don\'t have access to this page...');
   else window.loading_screen.finish();
   
